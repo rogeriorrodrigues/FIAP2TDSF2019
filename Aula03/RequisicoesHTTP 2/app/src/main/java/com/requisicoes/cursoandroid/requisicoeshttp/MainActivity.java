@@ -105,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
             String valorMoeda = null;
             String simbolo = null;
 
+            String objetoValorUS = null;
+            String valorMoedaUS = null;
+            String simboloUS = null;
+
             try {
 
                 /*JSONObject jsonObject = new JSONObject(resultado);
@@ -115,12 +119,24 @@ public class MainActivity extends AppCompatActivity {
                 localidade = jsonObject.getString("localidade");
                 uf = jsonObject.getString("uf");*/
 
+                //valor para Real BRL
                 JSONObject jsonObject = new JSONObject(resultado);
                 objetoValor = jsonObject.getString("BRL");
 
+                //Valor para Dolar USD
+                JSONObject jsonObjectUS = new JSONObject(resultado);
+                objetoValorUS = jsonObjectUS.getString("USD");
+
+
+                //Valor para Real
                 JSONObject jsonObjectReal = new JSONObject(objetoValor);
                 valorMoeda = jsonObjectReal.getString("last");
                 simbolo = jsonObjectReal.getString("symbol");
+
+                //Valor para Dolar
+                JSONObject jsonObjectDolar = new JSONObject(objetoValorUS);
+                valorMoedaUS = jsonObjectDolar.getString("last");
+                simboloUS = jsonObjectDolar.getString("symbol");
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -128,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
             //textoResultado.setText(resultado);
             //textoResultado.setText(logradouro+" / "+cep+" / "+complemento+" / "+bairro+" / "+localidade+" / "+uf);
-            textoResultado.setText(simbolo+" "+valorMoeda);
+            textoResultado.setText("Valor para Real: "+ simbolo+"  "+ valorMoeda + " E O valor Dolar" + simboloUS+" "+valorMoedaUS);
         }
     }
 
