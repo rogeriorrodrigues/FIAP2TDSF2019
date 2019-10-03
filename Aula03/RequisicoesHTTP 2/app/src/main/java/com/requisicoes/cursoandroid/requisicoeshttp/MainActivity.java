@@ -11,6 +11,7 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button botaoRecuperar;
     private TextView textoResultado;
+    private TextView txtCep;
+    private TextView txtLogradouro;
+    private TextView txtCidade;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         botaoRecuperar = findViewById(R.id.buttonRecuperar);
         textoResultado = findViewById(R.id.textResultado);
+        txtCep = findViewById(R.id.txtCep);
+        txtLogradouro = findViewById(R.id.txtLogradouro);
+        txtCidade = findViewById(R.id.txtCidade);
 
         botaoRecuperar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 String urlApi = "https://blockchain.info/ticker";
                 String cep = "01310100";
                 String urlCep = "https://viacep.com.br/ws/" + cep + "/json/";
-                task.execute(urlApi);
+                task.execute(urlCep);
             }
         });
 
@@ -93,58 +100,61 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String resultado) {
             super.onPostExecute(resultado);
-            /*
+
             String logradouro = null;
             String cep = null;
             String complemento = null;
             String bairro = null;
             String localidade = null;
-            String uf = null;*/
+            String uf = null;
 
-            String objetoValor = null;
+           /* String objetoValor = null;
             String valorMoeda = null;
             String simbolo = null;
 
             String objetoValorUS = null;
             String valorMoedaUS = null;
-            String simboloUS = null;
+            String simboloUS = null;*/
 
             try {
 
-                /*JSONObject jsonObject = new JSONObject(resultado);
+                JSONObject jsonObject = new JSONObject(resultado);
                 logradouro = jsonObject.getString("logradouro");
                 cep = jsonObject.getString("cep");
                 complemento = jsonObject.getString("complemento");
                 bairro = jsonObject.getString("bairro");
                 localidade = jsonObject.getString("localidade");
-                uf = jsonObject.getString("uf");*/
+                uf = jsonObject.getString("uf");
 
                 //valor para Real BRL
-                JSONObject jsonObject = new JSONObject(resultado);
-                objetoValor = jsonObject.getString("BRL");
+               // JSONObject jsonObject = new JSONObject(resultado);
+              //  objetoValor = jsonObject.getString("BRL");
 
                 //Valor para Dolar USD
-                JSONObject jsonObjectUS = new JSONObject(resultado);
-                objetoValorUS = jsonObjectUS.getString("USD");
+               // JSONObject jsonObjectUS = new JSONObject(resultado);
+               // objetoValorUS = jsonObjectUS.getString("USD");
 
 
                 //Valor para Real
-                JSONObject jsonObjectReal = new JSONObject(objetoValor);
-                valorMoeda = jsonObjectReal.getString("last");
-                simbolo = jsonObjectReal.getString("symbol");
+                //JSONObject jsonObjectReal = new JSONObject(objetoValor);
+                //valorMoeda = jsonObjectReal.getString("last");
+               // simbolo = jsonObjectReal.getString("symbol");
 
                 //Valor para Dolar
-                JSONObject jsonObjectDolar = new JSONObject(objetoValorUS);
-                valorMoedaUS = jsonObjectDolar.getString("last");
-                simboloUS = jsonObjectDolar.getString("symbol");
+                //JSONObject jsonObjectDolar = new JSONObject(objetoValorUS);
+                //valorMoedaUS = jsonObjectDolar.getString("last");
+               // simboloUS = jsonObjectDolar.getString("symbol");
 
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
             //textoResultado.setText(resultado);
-            //textoResultado.setText(logradouro+" / "+cep+" / "+complemento+" / "+bairro+" / "+localidade+" / "+uf);
-            textoResultado.setText("Valor para Real: "+ simbolo+"  "+ valorMoeda + " E O valor Dolar" + simboloUS+" "+valorMoedaUS);
+            textoResultado.setText("Resultado Completo: " + logradouro+" / "+cep+" / "+complemento+" / "+bairro+" / "+localidade+" / "+uf);
+            txtCep.setText("CEP: " + cep);
+            txtLogradouro.setText("Rua: "  +logradouro);
+            txtCidade.setText("Cidade: " + localidade);
+            //textoResultado.setText("Valor para Real: "+ simbolo+"  "+ valorMoeda + " E O valor Dolar" + simboloUS+" "+valorMoedaUS);
         }
     }
 
