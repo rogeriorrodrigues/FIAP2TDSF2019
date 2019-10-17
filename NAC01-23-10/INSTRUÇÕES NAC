@@ -1,8 +1,9 @@
 - Construir um app com consumo de API aberta e exibição dos dados:
-  - Listagem de API: Via CEP
-  		     Mercado Blockchain
-                     API da Marvel
-                     API Twitter
+
+  - Listagem de API: Via CEP - https://viacep.com.br/
+  		     Mercado Blockchain - https://www.blockchain.com/pt/api/exchange_rates_api
+                     API da Marvel - https://developer.marvel.com/
+                     API Twitter - https://developer.twitter.com/en/docs/api-reference-index
 
 - Material para consulta + codigo exemplo github
  - https://github.com/rogeriorrodrigues/FIAP2TDSF2019
