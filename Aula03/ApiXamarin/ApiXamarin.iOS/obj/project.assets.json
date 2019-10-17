@@ -1179,32 +1179,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/rogerio/.nuget/packages/": {}
+    "C:\\Users\\logonpflocal\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rogerio/FIAP/FIAP2TDSF2019/Aula03/ApiXamarin/ApiXamarin.iOS/ApiXamarin.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\logonpflocal\\source\\FIAP2TDSF2019\\Aula03\\ApiXamarin\\ApiXamarin.iOS\\ApiXamarin.iOS.csproj",
       "projectName": "ApiXamarin.iOS",
-      "projectPath": "/Users/rogerio/FIAP/FIAP2TDSF2019/Aula03/ApiXamarin/ApiXamarin.iOS/ApiXamarin.iOS.csproj",
-      "packagesPath": "/Users/rogerio/.nuget/packages/",
-      "outputPath": "/Users/rogerio/FIAP/FIAP2TDSF2019/Aula03/ApiXamarin/ApiXamarin.iOS/obj/",
+      "projectPath": "C:\\Users\\logonpflocal\\source\\FIAP2TDSF2019\\Aula03\\ApiXamarin\\ApiXamarin.iOS\\ApiXamarin.iOS.csproj",
+      "packagesPath": "C:\\Users\\logonpflocal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\logonpflocal\\source\\FIAP2TDSF2019\\Aula03\\ApiXamarin\\ApiXamarin.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/rogerio/.config/NuGet/NuGet.Config"
+        "C:\\Users\\logonpflocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/rogerio/FIAP/FIAP2TDSF2019/Aula03/ApiXamarin/ApiXamarin/ApiXamarin.csproj": {
-              "projectPath": "/Users/rogerio/FIAP/FIAP2TDSF2019/Aula03/ApiXamarin/ApiXamarin/ApiXamarin.csproj"
+            "C:\\Users\\logonpflocal\\source\\FIAP2TDSF2019\\Aula03\\ApiXamarin\\ApiXamarin\\ApiXamarin.csproj": {
+              "projectPath": "C:\\Users\\logonpflocal\\source\\FIAP2TDSF2019\\Aula03\\ApiXamarin\\ApiXamarin\\ApiXamarin.csproj"
             }
           }
         }

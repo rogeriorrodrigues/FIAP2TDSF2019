@@ -20,4 +20,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Resultado" />
+    <TextView
+        android:id="@+id/txtCep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CEP" />
+    <TextView
+        android:id="@+id/txtLogradouro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logradouro" />
+    <TextView
+        android:id="@+id/txtCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cidade" />
 </LinearLayout>
