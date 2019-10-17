@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SDKMapasGoogle.iml" filepath="$PROJECT_DIR$/SDKMapasGoogle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2 - CustomizandoMapas.iml" filepath="$PROJECT_DIR$/2 - CustomizandoMapas.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
