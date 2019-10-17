@@ -1,19 +1,16 @@
 ﻿<Properties StartupConfiguration="{BD5697A4-335D-43F4-B712-7210E7ECC76F}|Default">
   <MonoDevelop.Ide.ItemProperties.ApiXamarin.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" FirstBuild="True" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ApiXamarin/CepResultModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiXamarin/MainPage.xaml.cs">
     <Files>
-      <File FileName="ApiXamarin/MainPage.xaml.cs" Line="46" Column="45" />
+      <File FileName="ApiXamarin/MainPage.xaml.cs" Line="55" Column="18" />
       <File FileName="ApiXamarin/MainPage.xaml" Line="13" Column="24" />
-      <File FileName="ApiXamarin/CepResultModel.cs" Line="1" Column="1" />
+      <File FileName="ApiXamarin/CepResultModel.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiXamarin" expanded="True">
-            <Node name="ApiXamarin" expanded="True">
-              <Node name="CepResultModel.cs" selected="True" />
-              <Node name="MainPage.xaml" expanded="True" />
-            </Node>
+            <Node name="ApiXamarin" expanded="True" />
           </Node>
         </State>
       </Pad>
